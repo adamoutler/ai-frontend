@@ -1,0 +1,46 @@
+.send-button {
+    padding: 0px; 
+    font-size: 1em; 
+    min-width: 4em;
+    max-width: 4em;
+    height: 3em; 
+    border-radius: 10%;
+    background-color: #2886ff; 
+    color: white; 
+    border: none; 
+    cursor: pointer; 
+    display: inline-flex; 
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    flex-grow: 0;
+    position: relative;
+    box-sizing: content-box;
+}
+
+.send-button:hover {
+    background-color: #1866Cf; 
+}
+
+#input-group {
+    border: 1px solid #ccc;
+    background: transparent ;
+}
+
+#input-container {
+    background: transparent; 
+}
+
+.styler {
+    background: transparent; 
+}
+#text-area {
+    flex-grow: 1; 
+    flex-basis: 0;
+    background: transparent;
+    border: none; 
+    outline: none;
+    box-shadow: none;
+}
+
+footer { display: none; }
