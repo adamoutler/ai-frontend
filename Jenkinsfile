@@ -23,7 +23,7 @@ pipeline {
             steps {
                 script {
                     // Building the Docker image for the AI Frontend
-                    sh 'docker build -t ai-frontend .'
+                    sh 'docker build -t ai-frontend:latest .'
                 }
             }
         }
