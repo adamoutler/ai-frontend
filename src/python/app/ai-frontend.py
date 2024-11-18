@@ -49,7 +49,7 @@ def chatbot_fn(messages, user_input):
 def initialize():
     """ Initialize the chatbot interface"""
     with gr.Blocks(css=css) as frontend:
-        chatbot = gr.Chatbot(type="messages", label="Chatbot Conversation", height=200, max_height=400)
+        chatbot = gr.Chatbot(type="messages", label="Chatbot Conversation", height=200)
         state = gr.State()
 
         # Group to contain the input text box and send button neatly
