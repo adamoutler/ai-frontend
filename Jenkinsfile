@@ -1,5 +1,7 @@
 pipeline {
-    agent any
+    agent {
+        node { label 'shark-wrangler' } 
+    }
 
     environment {
         // Setting environment variables from Jenkins credentials and other values
