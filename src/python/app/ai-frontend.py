@@ -69,7 +69,7 @@ def initialize():
         user_input.submit(fn=chatbot_fn, inputs=[state, user_input], outputs=[state, chatbot])
     
 # Launch the customized interface
-    frontend.launch()
+    frontend.launch(server_name="0.0.0.0")
 
 
 if __name__ == "__main__":
