@@ -32,7 +32,7 @@ pipeline {
             steps {
                 script {
                     // Running the Docker container with environment variables
-
+                    sh 'docker-compose down --remove-orphans'
                     sh 'docker-compose -f docker-compose.yaml up -d --force-recreate'
 
                 }
