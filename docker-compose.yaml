@@ -2,10 +2,8 @@ version: '3.8'
 
 services:
   ai-frontend:
-    container_name: ai-frontend:latest
-    build:
-      context: .
-      dockerfile: Dockerfile
+    container_name: ai-frontend
+    image: ai-frontend:latest
     ports:
       - "7860:7860"
     environment:
