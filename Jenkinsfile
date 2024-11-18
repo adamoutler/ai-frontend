@@ -44,13 +44,4 @@ pipeline {
             }
         }
     }
-
-    post {
-        always {
-            // Clean up: stop and remove the container if it already exists
-            script {
-                sh 'docker rm -f ai-frontend || true'
-            }
-        }
-    }
 }
