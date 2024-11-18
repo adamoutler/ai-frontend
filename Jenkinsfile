@@ -31,14 +31,7 @@ pipeline {
                 script {
                     // Running the Docker container with environment variables
                     sh '''
-                    docker run -d \
-                        --name ai-frontend \
-                        -e APIKEY=${APIKEY} \
-                        -e BOTID=${BOTID} \
-                        -e COMPLETIONSURL=${COMPLETIONSURL} \
-                        -e SYSTEMPROMPT="${SYSTEMPROMPT}" \
-                        -p 7860:7860 \
-                        ai-frontend
+                    sh 'docker-compose -f docker-compose.yaml up -d --force-recreate'
                     '''
                 }
             }
