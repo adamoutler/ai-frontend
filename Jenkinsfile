@@ -32,9 +32,9 @@ pipeline {
             steps {
                 script {
                     // Running the Docker container with environment variables
-                    sh '''
+
                     sh 'docker-compose -f docker-compose.yaml up -d --force-recreate'
-                    '''
+
                 }
             }
         }
