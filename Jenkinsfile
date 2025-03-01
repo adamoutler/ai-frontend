@@ -6,9 +6,9 @@ pipeline {
     environment {
         // Setting environment variables from Jenkins credentials and other values
         APIKEY = credentials('ai-hacked-your-info-key')
-        BOTID = 'granite3-dense:2b'
+        BOTID = 'adambot'
         COMPLETIONSURL = 'https://ai.hackedyour.info/api/chat/completions'
-        SYSTEMPROMPT = 'You are a helpful bot'
+        SYSTEMPROMPT = ''
     }
 
     stages {
